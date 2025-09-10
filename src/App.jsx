@@ -1,6 +1,5 @@
 import Pagination from "./components/Pagination";
 import Posts from "./components/Posts";
-import "./App.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -24,8 +23,8 @@ function App() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="container">
-      <h1 className="text-primary">My Blog</h1>
+    <div className="max-w-[40%] mx-auto px-[15px]">
+      <h1 className="text-[#0d7bff]">My Blog</h1>
       <Posts currentPosts={currentPosts} loading={loading} />
       <Pagination
         paginate={paginate}

@@ -13,15 +13,13 @@ export default function Pagination({
 
   return (
     <nav>
-      <ul className="pagination">
+      <ul className="flex flex-wrap rounded">
         {pageNumbers.map((number) => (
-          <li key={number} className="page-item">
+          <li key={number}>
             <a
               onClick={() => paginate(number)}
               href="#"
-              className={`page-link ${
-                currentPage === number ? "active-page" : ""
-              }`}
+              className={`text-blue-800 border border-gray-300 py-2 px-3 -ml-px mb-4 inline-block ${currentPage === number ? "bg-[#61dafbaa] text-white" : ""}`}
             >
               {number}
             </a>

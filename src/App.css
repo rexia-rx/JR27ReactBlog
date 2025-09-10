@@ -43,13 +43,9 @@
   color: #888;
 }
 
-.App {
-  text-align: center;
-}
-
 .container {
-  max-width: 80%;
-  margin: 0 auto;
+  max-width: 80%;  
+  margin: 0 auto; 
   padding: 0 15px;
 
 }
@@ -91,6 +87,11 @@ a {
 }
 
 .active-page {
-  background-color: lightblue;
+  background-color: #61dafbaa;
   color: #fff;
+}
+
+/* Utility used by App.jsx heading */
+.text-primary {
+  color: #0d7bff;
 }
